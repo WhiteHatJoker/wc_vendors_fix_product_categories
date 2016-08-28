@@ -6,8 +6,9 @@ Just copy the archive-product.php to your current theme folder/woocommerce/ stru
 
 ## Manual installation if you have different version of archive-product.php or custom code there ##
 Instead of the line 67 that was `<?php woocommerce_product_subcategories(); ?>` put :
-`<?php $vendor_shop = urldecode( get_query_var( 'vendor_shop' ) );
+```<?php $vendor_shop = urldecode( get_query_var( 'vendor_shop' ) );
 $vendor_id   = WCV_Vendors::get_vendor_id( $vendor_shop );
 if ( !$vendor_id ) {
     woocommerce_product_subcategories();
 } ?>`
+```
