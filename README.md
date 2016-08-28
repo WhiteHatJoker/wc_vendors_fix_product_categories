@@ -11,4 +11,5 @@ Instead of the line 67 that was `<?php woocommerce_product_subcategories(); ?>` 
 $vendor_id   = WCV_Vendors::get_vendor_id( $vendor_shop );
 if ( !$vendor_id ) {
     woocommerce_product_subcategories();
-} ?>```
+} ?>
+```
