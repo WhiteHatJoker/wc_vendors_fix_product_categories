@@ -5,7 +5,7 @@ If you are using WC Vendors Plugin and you have set to show categories on the ma
 Just copy the archive-product.php to your current theme folder/woocommerce/
 
 ## Manual installation if you have different version of archive-product.php or custom code there ##
-Instead of the line 67 that was `<?php woocommerce_product_subcategories(); ?>` put :
+Instead of the [line 67](woocommerce/archive-product.php#L67) that was `<?php woocommerce_product_subcategories(); ?>` put :
 ```php
 <?php $vendor_shop = urldecode( get_query_var( 'vendor_shop' ) );
 $vendor_id   = WCV_Vendors::get_vendor_id( $vendor_shop );
